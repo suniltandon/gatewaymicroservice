@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gatewaymicroservice
+  
+#name: gatewaymicroservice
+---
+spring:
+  profile: local
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
